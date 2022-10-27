@@ -4,8 +4,7 @@
 replicaCount: 1
 valueLabel: fromValuesYAML
 image:
-  repository: nginx
-  tag: stable
+  name: fakeimage.com/notreal:tagname
   pullPolicy: IfNotPresent
 service:
   name: nginx
