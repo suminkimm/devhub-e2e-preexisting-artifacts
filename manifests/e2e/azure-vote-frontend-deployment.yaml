@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: azure-vote-front
-          image: devhube2enepaokzi.azurecr.io/kubeimage
+          image: devhube2egkczencf.azurecr.io/kubeimage
           ports:
             - containerPort: 80
           env:
