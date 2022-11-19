@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: azure-vote-front
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: azure-vote-front
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: azure-vote-front
-          image: devhube2ejaudstco.azurecr.io/kubeimage
+          image: $ACR_NAME.azurecr.io/kubeimage
           ports:
             - containerPort: 80
           env:
