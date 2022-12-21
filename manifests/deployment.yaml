@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azure-vote
+  labels:
+    app: azure-vote
+  namespace: {{NAMESPACE}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: azure-vote
+  template:
+    metadata:
+      labels:
+        app: azure-vote
+    spec:
+      containers:
+        - name: azure-vote
+          image: {{IMAGENAME}}
+          ports:
+            - containerPort: 8080
