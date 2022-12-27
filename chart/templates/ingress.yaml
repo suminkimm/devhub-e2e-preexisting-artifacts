@@ -5,6 +5,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: {{ template "helloworld-chart.fullname" . }}
+  namespace: { { .Values.namespace } }
   labels:
     app: {{ template "helloworld-chart.name" . }}
     chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
