@@ -1,5 +1,5 @@
 imageKey:
-  repository: "goecho"
+  repository: "devhubrunnertest.azurecr.io/kubeimage"
   pullPolicy: IfNotPresent
   tag: "latest"
 service:
