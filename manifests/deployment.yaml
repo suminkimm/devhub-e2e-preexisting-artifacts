@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: goecho
-          image: goecho
+          image: devhubrunnertest.azurecr.io/kubeimage
           ports:
             - containerPort: 1323
