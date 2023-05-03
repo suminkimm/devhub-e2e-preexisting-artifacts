@@ -1,0 +1,8 @@
+imageKey:
+  repository: "goecho"
+  pullPolicy: IfNotPresent
+  tag: "latest"
+service:
+  annotations: {}
+  type: LoadBalancer
+  port: 80
