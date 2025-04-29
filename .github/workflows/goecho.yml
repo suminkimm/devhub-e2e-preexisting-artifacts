@@ -41,9 +41,9 @@ env:
   ACR_RESOURCE_GROUP: skad
   AZURE_CONTAINER_REGISTRY: devhubrunnertest
   CONTAINER_NAME: kubeimage
-  CLUSTER_NAME: skad
-  CLUSTER_RESOURCE_GROUP: skad
-  CLUSTER_RESOURCE_TYPE: Microsoft.ContainerService/fleets
+  CLUSTER_NAME: skadfleet2
+  CLUSTER_RESOURCE_GROUP: skad2
+  CLUSTER_RESOURCE_TYPE: Microsoft.containerservice/fleets
   DEPLOYMENT_MANIFEST_PATH: |
     ./manifests/deployment.yaml
     ./manifests/service.yaml
